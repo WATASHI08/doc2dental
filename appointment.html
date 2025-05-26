@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOCTO Dental Clinic </title>
+
+    <!-- HOME CSS -->
+    <link rel="stylesheet" href="appointment.css">
+    <script src="https://kit.fontawesome.com/7bed2f929e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar__container">
+            <a href="homepage.html" id="navbar__logo"> <i class="fas fa-tooth" id="fas"> </i> DOCTO Dental Clinic </a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="homepage.html" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="aboutpage.html" class="navbar__links"> About </a>
+                </li>
+                <li class="navbar__item dropdown">
+                <a href="#" class="navbar__links">Service </a>
+                        <ul class="dropdown__menu">
+                            <li><a href="/teethcleaning.html"> Teeth Cleaning </a> </li>
+                            <li><a href="/airflowcleaning.html"> Airflow Teeth Cleaning  </a></li>
+                            <li><a href="/teethcleaning.html"> Tooth Filling </a></li>
+                            <li><a href="/toothextraction.html"> Tooth Extraction </a></li>
+                            <li><a href="/wisdomextraction.html"> Wisdom Tooth Extraction </a></li>
+                            <li><a href="/rootcanal.html"> Root Canal Treatment </a></li>
+                            <li><a href="/toothwhitening.html"> Tooth Whitening </a></li>
+                            <li><a href="/veneer.html"> Veneer </a></li>
+                            <li><a href="/dentalcrown.html"> Dental Crown </a></li>
+                            <li><a href="/dentalimplant.html"> Dental Implant </a></li>
+                            <li><a href="/dentalbraces.html"> Dental Braces </a></li>
+                            <li><a href="/invisalign.html"> Invisalign </a></li>
+                        </ul>
+                </li>
+                <li class="navbar__btn">
+                    <a href="http://localhost/database/appointment.html" class="button"> Make an Appointment </a>
+                </li>              
+            </ul>
+        </div>
+    </div>
+
+<!--Forms-->
+    <div class="forms-cont">
+        <br><br><br><h2><span class="txt"> Please fill up your information:</span></h2><br><br><br>
+        <form action="#">
+            <div class="form-field">
+                <label><span class="txt">First Name:</span> </label>
+                <input type="text"/>
+            </div><br>
+            <div class="form-field">
+                <label><span class="txt">Last Name:</span></label>
+                <input type="text"/>
+            </div><br>
+            <div class="form-field">
+                <label><span class="txt">Gender:</span></label>
+                <input type="radio" name="gMale" value="Male" id="Male"/>
+                <label>Male</label>
+                <input type="radio" name="gFem" value="Female" id="Female"/>
+                <label>Female</label>
+            </div><br>
+            <div class="form-field">
+                <label><span class="txt">Email:</span></label>
+                <input type="email"/>
+            </div><br>
+            <div class="form-field">
+                <label><span class="txt">Contact Number:</span></label>
+                <input type="text"/>
+            </div><br>
+            <div class="form-field">
+                    <label><span class="txt">Chosen Service:</span></label>
+                        <select>
+                            <option value="0"> </option>
+                            <option value="1">Teeth Cleaning</option>
+                            <option value="2">Airflow Teeth Cleaning</option>
+                            <option value="3">Tooth Filling</option>
+                            <option value="4">Tooth Extraction</option>
+                            <option value="5">Wisdom Tooth Extraction</option>
+                            <option value="6">Root Canal Treatment</option>
+                            <option value="7">Tooth Whitening</option>
+                            <option value="9">Dental Crown</option>
+                            <option value="8">Veneer</option>
+                            <option value="10">Dental Implant</option>
+                            <option value="11">Dental Braces</option>
+                            <option value="12">Invisalign</option>
+                        </select>
+                </div><br>
+                <div class="form-field">
+                    <label><span class="txt">Date:</span></label>
+                    <input type="date"/>
+                </div><br>
+                <div class="form-field">
+                    <label><span class="txt">Time:</span></label>
+                    <input type="time"/>
+                </div><br>
+                <div class="form-field">
+                    <label for="Files"><span class="txt">Photo:</span></label>
+                    <input type="file"/>
+                </div><br><br><br><br>
+       
+
+    </form> 
+        <div class="btnSubmit">
+            <button class="submitButton">Submit Form</button>
+        </div>
+    </div>
+</body>
+</html>

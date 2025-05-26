@@ -1,0 +1,458 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif; 
+}
+
+body {
+        background-image: url("images/bgweb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;       
+        background-attachment: fixed;
+            }
+
+.navbar {
+    background: rgb(82, 160, 208);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 999;
+    position: stretch;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: lightcyan;
+    background-image: linear-gradient(to top,lightgray 0%, white 50%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    position: stretch;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#fas {
+    margin-right: 0.8rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+    gap: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: rgb(82, 160, 208);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown__menu li a {
+    padding: 12px 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.dropdown__menu li a:hover {
+    background-color: lightseagreen;
+}
+
+.dropdown:hover .dropdown__menu {
+    display: flex;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: lightseagreen;
+    color: white;
+}
+
+.button:hover {
+    background: lightskyblue;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.footer{
+    height: 60px;
+    background-color: rgb(16, 72, 107);
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+/* Border container */
+.border {
+    border: 5px; 
+    border-radius: 12px;                     
+    background-color: rgba(0, 51, 102, 0.8);   
+    padding: 100px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);   
+    max-width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.about_text{
+    line-height: 2.0;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 200%;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.highlight {
+    color: #f9a825; 
+    font-weight: bold;
+}
+
+/* Clinic Photo */
+.clinic_photo {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    background-color: rgba(5, 48, 77, 0.95);
+    padding: 60px;
+    width: 100%;
+    }
+
+.clinic_photo_wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    }
+
+.clinic_image_box img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+.clinic_description {
+    color:#fff;
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1;
+    font-size: 150%;
+    line-height: 1.6;
+    text-align: justify;
+    font-family: 'Kumbh Sans', sans-serif; 
+    }
+
+/*Dentist Info */
+.crew {
+display: flex;
+justify-content: center;  
+gap: 200px;
+flex-wrap: wrap;
+padding: 40px;
+background-color:rgba(5, 48, 77, 0.678);
+width: 100%;
+margin: 0 auto;
+margin-top: 3rem;
+}
+
+.dentist_info {
+background-color: rgba(5, 48, 77, 0.678);
+border-radius: 20px;
+padding: 20px;
+margin-top: 1rem;
+text-align: center;
+width: 250;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dentist_photo {
+width: 100px;
+height: 100px;
+margin: 0 auto 10px;
+border-radius: 50%;
+overflow: hidden;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.dentist_photo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.dentist_name {
+font-weight: bold;
+color: #fff;
+font-size: 16px;
+margin: 10px 0 4px;
+}
+
+.dentist_position {
+font-size: 14px;
+color: #fff;
+margin: 0;
+}
+
+.clinic_gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  background-color: rgba(5, 48, 77, 0.95);
+  padding: 60px;
+  width: 100%;
+  border-bottom: 5px solid #b0d8dd;
+    }
+
+.clinic_images {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 190px;
+}
+
+.clinic_images img {
+width: 300px;
+height: 220px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+/* homesite */
+
+.homesite {
+    display: flex;
+    gap: 160px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5.5rem;
+    margin-left: 6.5rem;   
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    
+}
+
+.homesite_container {
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-family: 'Kumbh Sans', sans-serif; 
+
+}
+
+.homesite_container h1 {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4rem;
+    font-family: 'Kumbh Sans', sans-serif; 
+
+}
+
+#homesite_logo {
+    margin-right: 0.4rem;
+}
+
+#clock {
+    margin-right: 0.4rem;
+}
+
+#close {
+    margin-right: 0.3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.homesite_item {
+    margin-top: 0.5rem;
+}
+
+.homesite_menu h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.30rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.item:hover {
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.sched {
+    color: white;
+    text-decoration: none;
+    font-size: 1.30rem;
+}
+
+.hours_sched {
+    color: white;
+    
+}
+
+.sched_time {
+    font-size: 1.30rem;
+    margin-left: 1.2rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* schedule button */
+
+.schedulenow {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, rgb(74, 135, 132) 0%, lightseagreen 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.schedulenow a {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.schedulenow:hover {
+    background: lightskyblue;
+    transition: all 0.3s ease;
+}
+
+/* Contact */
+
+.contact {
+    color: white;
+}
+
+.contact_container {
+    font-size: 1.30rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.contact_menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+#ct {
+    margin-left: 0.5rem;
+}
+
+/*copyrights*/
+
+.copyrights {
+    color: red;
+    display: flex;
+    font-size: 1.30rem;
+}
+
+#cr {
+    color: black;
+}
